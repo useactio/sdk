@@ -1,0 +1,71 @@
+{
+  "name": "@useactio/sdk",
+  "version": "1.0.0",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Efe Behar",
+    "email": "info@actio.click"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./index.cjs"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js",
+      "require": "./dist/react.cjs"
+    }
+  },
+  "scripts": {
+    "build:types": "tsc",
+    "build": "pnpm run lint && pnpm run build:types && pnpm run build:js",
+    "build:js": "tsc",
+    "test": "vitest run",
+    "lint": "eslint . --ext .ts,.tsx --ignore-pattern '**/*.d.ts' --ignore-pattern 'jest.config.ts'",
+    "lint:fix": "eslint . --ext .ts,.tsx --ignore-pattern '**/*.d.ts' --fix",
+    "format": "prettier --write .",
+    "docs": "typedoc --out docs/ --entryPointStrategy expand --tsconfig ./tsconfig.json --plugin typedoc-plugin-markdown ./src",
+    "publish:package": "pnpm run lint && pnpm build && pnpm publish --access public",
+    "release": "pnpm run lint && pnpm version patch && pnpm build && pnpm publish --access public",
+    "release:patch": "pnpm run lint && pnpm version patch && pnpm build && pnpm publish --access public",
+    "release:minor": "pnpm run lint && pnpm version minor && pnpm build && pnpm publish --access public",
+    "release:major": "pnpm run lint && pnpm version major && pnpm build && pnpm publish --access public",
+    "publish:dry": "pnpm run lint && pnpm build && pnpm publish --access public --dry-run"
+  },
+  "dependencies": {
+    "js-sha256": "^0.11.0",
+    "tweetnacl": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.35.0",
+    "@typescript-eslint/parser": "^8.35.0",
+    "eslint": "^9.30.0",
+    "eslint-plugin-react": "^7.37.5",
+    "ts-jest": "^29.4.0",
+    "ts-node": "^10.9.2",
+    "typedoc-plugin-markdown": "^4.6.3",
+    "vitest": "^3.2.4"
+  },
+  "peerDependencies": {
+    "@solana/web3.js": "^1.98.2",
+    "react": ">=17.0.0"
+  },
+  "files": [
+    "react/*",
+    "client-*.js",
+    "client-*.js.map",
+    "index.js",
+    "*.d.ts",
+    "index.cjs",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "packageManager": "pnpm@10.11.0+sha512.6540583f41cc5f628eb3d9773ecee802f4f9ef9923cc45b69890fb47991d4b092964694ec3a4f738a420c918a333062c8b925d312f42e4f0c263eb603551f977"
+}
