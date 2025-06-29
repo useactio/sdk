@@ -22,18 +22,14 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-        working-directory: sdk
 
       - name: Build
         run: pnpm build
-        working-directory: sdk
 
       - name: Test
         run: pnpm test
-        working-directory: sdk
 
       - name: Release
         run: npx semantic-release
-        working-directory: sdk
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
