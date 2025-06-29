@@ -8,6 +8,10 @@
     "name": "Efe Behar",
     "email": "info@actio.click"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest"
+  },
   "exports": {
     ".": {
       "types": "./index.d.ts",
