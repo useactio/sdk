@@ -8,7 +8,7 @@
 
 > **parseActionCodesMemo**(`memo`): `null` \| [`ParsedActionCodesMemo`](../interfaces/ParsedActionCodesMemo.md)
 
-Defined in: [src/memo.ts:35](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/memo.ts#L35)
+Defined in: [src/memo.ts:54](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/memo.ts#L54)
 
 Parse an Actio Protocol memo string V1 (AIP-1).
 
@@ -16,9 +16,9 @@ Parse an Actio Protocol memo string V1 (AIP-1).
 
 ### memo
 
-`string`
-
 The memo string to parse.
+
+`string` | `Uint8Array`\<`ArrayBufferLike`\>
 
 ## Returns
 

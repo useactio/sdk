@@ -6,7 +6,7 @@
 
 # Class: UnsupportedPrefixError
 
-Defined in: [src/error.ts:129](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/error.ts#L129)
+Defined in: [src/error.ts:129](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/error.ts#L129)
 
 Error thrown when a code prefix is not supported.
 
@@ -20,7 +20,7 @@ Error thrown when a code prefix is not supported.
 
 > **new UnsupportedPrefixError**(`details?`): `UnsupportedPrefixError`
 
-Defined in: [src/error.ts:130](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/error.ts#L130)
+Defined in: [src/error.ts:130](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/error.ts#L130)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [src/error.ts:130](https://github.com/useactio/sdk/blob/05c3f6050453
 
 > **code**: `string`
 
-Defined in: [src/error.ts:21](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/error.ts#L21)
+Defined in: [src/error.ts:21](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/error.ts#L21)
 
 #### Inherited from
 
@@ -54,7 +54,7 @@ Defined in: [src/error.ts:21](https://github.com/useactio/sdk/blob/05c3f60504530
 
 > `optional` **details**: `any`
 
-Defined in: [src/error.ts:22](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/error.ts#L22)
+Defined in: [src/error.ts:22](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/error.ts#L22)
 
 #### Inherited from
 

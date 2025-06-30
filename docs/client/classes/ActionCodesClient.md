@@ -6,7 +6,7 @@
 
 # Class: ActionCodesClient
 
-Defined in: [src/client.ts:145](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L145)
+Defined in: [src/client.ts:145](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L145)
 
 ## Constructors
 
@@ -14,7 +14,7 @@ Defined in: [src/client.ts:145](https://github.com/useactio/sdk/blob/05c3f605045
 
 > **new ActionCodesClient**(`baseUrl`): `ActionCodesClient`
 
-Defined in: [src/client.ts:146](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L146)
+Defined in: [src/client.ts:146](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L146)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [src/client.ts:146](https://github.com/useactio/sdk/blob/05c3f605045
 
 > **getAction**(`code`): `Promise`\<`Partial`\<\{ `action`: `Partial`\<[`ActionFields`](../interfaces/ActionFields.md)\>; `intendedFor`: `string`; \}\>\>
 
-Defined in: [src/client.ts:190](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L190)
+Defined in: [src/client.ts:190](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L190)
 
 Get the action fields for a given code.
 
@@ -56,7 +56,7 @@ The action fields.
 
 > **getTask**(`taskId`, `includeResult`): `Promise`\<[`TaskResponse`](../interfaces/TaskResponse.md)\>
 
-Defined in: [src/client.ts:248](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L248)
+Defined in: [src/client.ts:248](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L248)
 
 Get the status and (optionally) result of a task by its ID.
 
@@ -90,7 +90,7 @@ TaskNotFoundError if the task does not exist.
 
 > **getTaskResult**(`taskId`): `Promise`\<[`TaskResponse`](../interfaces/TaskResponse.md)\>
 
-Defined in: [src/client.ts:308](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L308)
+Defined in: [src/client.ts:308](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L308)
 
 Get the final result of a task when it's completed, failed, or cancelled.
 
@@ -118,7 +118,7 @@ TaskStillInProgressError if the task is not yet finalized.
 
 > **observeTaskStatus**(`taskId`, `intervalMs`): `AsyncGenerator`\<[`TaskResponse`](../interfaces/TaskResponse.md)\>
 
-Defined in: [src/client.ts:275](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L275)
+Defined in: [src/client.ts:275](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L275)
 
 Observe the status of a task until it's finalized (completed, failed, or cancelled).
 
@@ -148,7 +148,7 @@ An async generator that yields the task status updates.
 
 > **submitActionWithTask**(`code`, `fields`): `Promise`\<\{ `status`: [`ActionStatus`](../type-aliases/ActionStatus.md); `taskId`: `string`; \}\>
 
-Defined in: [src/client.ts:358](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L358)
+Defined in: [src/client.ts:358](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L358)
 
 Submit an action and return a task ID for tracking.
 
@@ -182,7 +182,7 @@ ActionSubmissionFailedError if submission fails or no task ID is returned.
 
 > **submitAndWait**(`code`, `fields`, `timeoutMs`): `Promise`\<[`TaskResponse`](../interfaces/TaskResponse.md)\>
 
-Defined in: [src/client.ts:397](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L397)
+Defined in: [src/client.ts:397](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L397)
 
 Submit an action and wait for its result in a single call.
 
@@ -226,7 +226,7 @@ TaskNotFoundError if the task is not found.
 
 > **waitForTaskResult**(`taskId`, `timeoutMs`): `Promise`\<[`TaskResponse`](../interfaces/TaskResponse.md)\>
 
-Defined in: [src/client.ts:327](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L327)
+Defined in: [src/client.ts:327](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L327)
 
 Wait for a task to complete and return its result.
 

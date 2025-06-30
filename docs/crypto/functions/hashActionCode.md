@@ -8,7 +8,7 @@
 
 > **hashActionCode**(`code`): `string`
 
-Defined in: [src/crypto.ts:45](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/crypto.ts#L45)
+Defined in: [src/crypto.ts:45](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/crypto.ts#L45)
 
 Hashes an Action code.
 

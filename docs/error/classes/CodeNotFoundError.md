@@ -6,7 +6,7 @@
 
 # Class: CodeNotFoundError
 
-Defined in: [src/error.ts:51](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/error.ts#L51)
+Defined in: [src/error.ts:51](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/error.ts#L51)
 
 Error thrown when a code cannot be found.
 
@@ -20,7 +20,7 @@ Error thrown when a code cannot be found.
 
 > **new CodeNotFoundError**(`details?`): `CodeNotFoundError`
 
-Defined in: [src/error.ts:52](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/error.ts#L52)
+Defined in: [src/error.ts:52](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/error.ts#L52)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [src/error.ts:52](https://github.com/useactio/sdk/blob/05c3f60504530
 
 > **code**: `string`
 
-Defined in: [src/error.ts:21](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/error.ts#L21)
+Defined in: [src/error.ts:21](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/error.ts#L21)
 
 #### Inherited from
 
@@ -54,7 +54,7 @@ Defined in: [src/error.ts:21](https://github.com/useactio/sdk/blob/05c3f60504530
 
 > `optional` **details**: `any`
 
-Defined in: [src/error.ts:22](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/error.ts#L22)
+Defined in: [src/error.ts:22](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/error.ts#L22)
 
 #### Inherited from
 

@@ -80,6 +80,12 @@ Re-exports [ExpiresAt](../client/type-aliases/ExpiresAt.md)
 
 ***
 
+### getActioMemo
+
+Re-exports [getActioMemo](../memo/functions/getActioMemo.md)
+
+***
+
 ### IntendedFor
 
 Re-exports [IntendedFor](../client/type-aliases/IntendedFor.md)

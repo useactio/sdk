@@ -8,7 +8,7 @@
 
 > **useSubmitAction**(): `object`
 
-Defined in: [src/react/hooks.ts:60](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/react/hooks.ts#L60)
+Defined in: [src/react/hooks.ts:60](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/react/hooks.ts#L60)
 
 Submit an action to the action code using the task-based flow.
 

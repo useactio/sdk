@@ -12,5 +12,6 @@
 
 ## Functions
 
+- [getActioMemo](functions/getActioMemo.md)
 - [parseActionCodesMemo](functions/parseActionCodesMemo.md)
 - [validateActionCodesMemoTransaction](functions/validateActionCodesMemoTransaction.md)

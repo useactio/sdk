@@ -8,7 +8,7 @@
 
 > **useSubmitAndWait**(): `object`
 
-Defined in: [src/react/hooks.ts:115](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/react/hooks.ts#L115)
+Defined in: [src/react/hooks.ts:115](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/react/hooks.ts#L115)
 
 Submit an action and wait for its result in a single call (fire-and-forget).
 

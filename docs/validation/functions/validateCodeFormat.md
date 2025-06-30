@@ -8,7 +8,7 @@
 
 > **validateCodeFormat**(`code`, `throws`): `boolean` \| `void`
 
-Defined in: [src/validation.ts:25](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/validation.ts#L25)
+Defined in: [src/validation.ts:25](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/validation.ts#L25)
 
 Validates an Action Code.
 For now, accepts default codes: 8-digit numeric codes

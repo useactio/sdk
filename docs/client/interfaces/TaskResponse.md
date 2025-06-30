@@ -6,7 +6,7 @@
 
 # Interface: TaskResponse
 
-Defined in: [src/client.ts:132](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L132)
+Defined in: [src/client.ts:132](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L132)
 
 Response for a task status or result.
 
@@ -16,7 +16,7 @@ Response for a task status or result.
 
 > **createdAt**: `number`
 
-Defined in: [src/client.ts:136](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L136)
+Defined in: [src/client.ts:136](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L136)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [src/client.ts:136](https://github.com/useactio/sdk/blob/05c3f605045
 
 > **expiresAt**: `number`
 
-Defined in: [src/client.ts:137](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L137)
+Defined in: [src/client.ts:137](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L137)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [src/client.ts:137](https://github.com/useactio/sdk/blob/05c3f605045
 
 > **mode**: `"signOnly"` \| `"submit"`
 
-Defined in: [src/client.ts:135](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L135)
+Defined in: [src/client.ts:135](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L135)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [src/client.ts:135](https://github.com/useactio/sdk/blob/05c3f605045
 
 > `optional` **result**: `object`
 
-Defined in: [src/client.ts:138](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L138)
+Defined in: [src/client.ts:138](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L138)
 
 #### error?
 
@@ -60,7 +60,7 @@ Defined in: [src/client.ts:138](https://github.com/useactio/sdk/blob/05c3f605045
 
 > **status**: [`ActionStatus`](../type-aliases/ActionStatus.md)
 
-Defined in: [src/client.ts:134](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L134)
+Defined in: [src/client.ts:134](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L134)
 
 ***
 
@@ -68,4 +68,4 @@ Defined in: [src/client.ts:134](https://github.com/useactio/sdk/blob/05c3f605045
 
 > **taskId**: `string`
 
-Defined in: [src/client.ts:133](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L133)
+Defined in: [src/client.ts:133](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L133)

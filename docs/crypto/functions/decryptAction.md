@@ -8,7 +8,7 @@
 
 > **decryptAction**(`encryptedAction`, `nonce`, `code`): `Partial`\<[`ActionFields`](../../client/interfaces/ActionFields.md)\>
 
-Defined in: [src/crypto.ts:27](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/crypto.ts#L27)
+Defined in: [src/crypto.ts:27](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/crypto.ts#L27)
 
 Decrypts an Action payload.
 

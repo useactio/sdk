@@ -6,7 +6,7 @@
 
 # Class: ActionCodesBaseError
 
-Defined in: [src/error.ts:20](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/error.ts#L20)
+Defined in: [src/error.ts:20](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/error.ts#L20)
 
 Base error class for all SDK errors.
 
@@ -34,7 +34,7 @@ Base error class for all SDK errors.
 
 > **new ActionCodesBaseError**(`message`, `code`, `details?`): `ActionCodesBaseError`
 
-Defined in: [src/error.ts:24](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/error.ts#L24)
+Defined in: [src/error.ts:24](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/error.ts#L24)
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: [src/error.ts:24](https://github.com/useactio/sdk/blob/05c3f60504530
 
 > **code**: `string`
 
-Defined in: [src/error.ts:21](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/error.ts#L21)
+Defined in: [src/error.ts:21](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/error.ts#L21)
 
 ***
 
@@ -72,7 +72,7 @@ Defined in: [src/error.ts:21](https://github.com/useactio/sdk/blob/05c3f60504530
 
 > `optional` **details**: `any`
 
-Defined in: [src/error.ts:22](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/error.ts#L22)
+Defined in: [src/error.ts:22](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/error.ts#L22)
 
 ***
 

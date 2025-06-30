@@ -8,4 +8,4 @@
 
 > **Reference** = `string`
 
-Defined in: [src/client.ts:44](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L44)
+Defined in: [src/client.ts:44](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L44)

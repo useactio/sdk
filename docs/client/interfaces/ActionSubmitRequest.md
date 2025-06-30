@@ -6,7 +6,7 @@
 
 # Interface: ActionSubmitRequest
 
-Defined in: [src/client.ts:104](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L104)
+Defined in: [src/client.ts:104](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L104)
 
 Request payload for submitting an action.
 
@@ -16,7 +16,7 @@ Request payload for submitting an action.
 
 > **action**: `Partial`\<[`ActionPayload`](../type-aliases/ActionPayload.md)\>
 
-Defined in: [src/client.ts:106](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L106)
+Defined in: [src/client.ts:106](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L106)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [src/client.ts:106](https://github.com/useactio/sdk/blob/05c3f605045
 
 > **code**: `string`
 
-Defined in: [src/client.ts:105](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/client.ts#L105)
+Defined in: [src/client.ts:105](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/client.ts#L105)

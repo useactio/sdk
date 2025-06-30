@@ -6,7 +6,7 @@
 
 # Class: UnauthorizedError
 
-Defined in: [src/error.ts:103](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/error.ts#L103)
+Defined in: [src/error.ts:103](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/error.ts#L103)
 
 Error thrown when the user is unauthorized.
 
@@ -20,7 +20,7 @@ Error thrown when the user is unauthorized.
 
 > **new UnauthorizedError**(`details?`): `UnauthorizedError`
 
-Defined in: [src/error.ts:104](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/error.ts#L104)
+Defined in: [src/error.ts:104](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/error.ts#L104)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [src/error.ts:104](https://github.com/useactio/sdk/blob/05c3f6050453
 
 > **code**: `string`
 
-Defined in: [src/error.ts:21](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/error.ts#L21)
+Defined in: [src/error.ts:21](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/error.ts#L21)
 
 #### Inherited from
 
@@ -54,7 +54,7 @@ Defined in: [src/error.ts:21](https://github.com/useactio/sdk/blob/05c3f60504530
 
 > `optional` **details**: `any`
 
-Defined in: [src/error.ts:22](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/error.ts#L22)
+Defined in: [src/error.ts:22](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/error.ts#L22)
 
 #### Inherited from
 

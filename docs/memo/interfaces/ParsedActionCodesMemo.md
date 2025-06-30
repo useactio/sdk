@@ -6,7 +6,7 @@
 
 # Interface: ParsedActionCodesMemo
 
-Defined in: [src/memo.ts:22](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/memo.ts#L22)
+Defined in: [src/memo.ts:26](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/memo.ts#L26)
 
 Parsed representation of an Actio Protocol memo.
 
@@ -16,7 +16,7 @@ Parsed representation of an Actio Protocol memo.
 
 > **ini**: `string`
 
-Defined in: [src/memo.ts:25](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/memo.ts#L25)
+Defined in: [src/memo.ts:29](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/memo.ts#L29)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [src/memo.ts:25](https://github.com/useactio/sdk/blob/05c3f60504530b
 
 > **int**: `string`
 
-Defined in: [src/memo.ts:27](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/memo.ts#L27)
+Defined in: [src/memo.ts:31](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/memo.ts#L31)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [src/memo.ts:27](https://github.com/useactio/sdk/blob/05c3f60504530b
 
 > **iss**: `string`
 
-Defined in: [src/memo.ts:26](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/memo.ts#L26)
+Defined in: [src/memo.ts:30](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/memo.ts#L30)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [src/memo.ts:26](https://github.com/useactio/sdk/blob/05c3f60504530b
 
 > **pre**: `string`
 
-Defined in: [src/memo.ts:24](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/memo.ts#L24)
+Defined in: [src/memo.ts:28](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/memo.ts#L28)
 
 ***
 
@@ -48,4 +48,4 @@ Defined in: [src/memo.ts:24](https://github.com/useactio/sdk/blob/05c3f60504530b
 
 > **ver**: `string`
 
-Defined in: [src/memo.ts:23](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/memo.ts#L23)
+Defined in: [src/memo.ts:27](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/memo.ts#L27)

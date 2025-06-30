@@ -8,7 +8,7 @@
 
 > **validateActionCodesMemoTransaction**(`tx`, `options`): `Promise`\<`boolean`\>
 
-Defined in: [src/memo.ts:60](https://github.com/useactio/sdk/blob/05c3f60504530bc924eb1866a55e5825e99fa486/src/memo.ts#L60)
+Defined in: [src/memo.ts:196](https://github.com/useactio/sdk/blob/aa0cbb7aefc891bd76a4e1447f8c84a24792d899/src/memo.ts#L196)
 
 Full validation of an Actio Protocol memo embedded in a transaction.
 - Parses the memo instruction
@@ -19,9 +19,9 @@ Full validation of an Actio Protocol memo embedded in a transaction.
 
 ### tx
 
-`TransactionResponse`
-
 The Solana TransactionResponse (from @solana/web3.js).
+
+`TransactionResponse` | `VersionedTransaction` | `Transaction`
 
 ### options
 
