@@ -81,3 +81,115 @@ describe("validateActionCodesMemoTransaction", () => {
     expect(result).toBe(false);
   });
 });
+
+describe("validateActionCodesMemoTransaction (Transaction input)", () => {
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
+
+  test("validates a Transaction with correct memo and signer", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockResolvedValue({
+        ok: true,
+        json: async () => ({ DEFAULT: EXAMPLE_PARSED.iss }),
+      })
+    );
+
+    // Simulate a Transaction object
+    const tx = {
+      instructions: [
+        {
+          programId: "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr",
+          data: Buffer.from(EXAMPLE_MEMO, "utf-8").toString("base64"),
+          keys: [
+            { pubkey: EXAMPLE_PARSED.iss, isSigner: true, isWritable: true },
+          ],
+        },
+      ],
+      signatures: [
+        { publicKey: EXAMPLE_PARSED.iss, signature: "dummy" },
+      ],
+      feePayer: EXAMPLE_PARSED.iss,
+    } as any;
+
+    const result = await validateActionCodesMemoTransaction(tx);
+    expect(result).toBe(true);
+  });
+
+  test("fails if memo is missing in Transaction", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockResolvedValue({ ok: true, json: async () => ({}) })
+    );
+    const tx = {
+      instructions: [],
+      signatures: [
+        { publicKey: EXAMPLE_PARSED.iss, signature: "dummy" },
+      ],
+      feePayer: EXAMPLE_PARSED.iss,
+    } as any;
+    const result = await validateActionCodesMemoTransaction(tx);
+    expect(result).toBe(false);
+  });
+});
+
+describe("validateActionCodesMemoTransaction (VersionedTransaction input)", () => {
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
+
+  test("validates a VersionedTransaction with correct memo and signer", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockResolvedValue({
+        ok: true,
+        json: async () => ({ DEFAULT: EXAMPLE_PARSED.iss }),
+      })
+    );
+
+    const tx = {
+      message: {
+        compiledInstructions: [
+          {
+            programIdIndex: 1,
+            data: Buffer.from(EXAMPLE_MEMO, "utf-8").toString("base64"),
+          },
+        ],
+        staticAccountKeys: [
+          { toBase58: () => EXAMPLE_PARSED.iss },
+          { toBase58: () => "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr" },
+        ],
+        header: { numRequiredSignatures: 1 },
+      },
+      signatures: ["dummy"],
+    } as any;
+
+    console.log("Test staticAccountKeys:", tx.message.staticAccountKeys.map(k => k.toBase58()));
+    console.log("Test programIdIndex:", tx.message.compiledInstructions[0].programIdIndex);
+    console.log("Test memo data:", Buffer.from(tx.message.compiledInstructions[0].data, "base64").toString("utf-8"));
+
+    const result = await validateActionCodesMemoTransaction(tx);
+    expect(result).toBe(true);
+  });
+
+  test("fails if memo is missing in VersionedTransaction", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockResolvedValue({ ok: true, json: async () => ({}) })
+    );
+    const tx = {
+      message: {
+        compiledInstructions: [],
+        staticAccountKeys: [
+          { toBase58: () => "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr" },
+          { toBase58: () => EXAMPLE_PARSED.iss },
+        ],
+        header: { numRequiredSignatures: 1 },
+      },
+      signatures: ["dummy"],
+    } as any;
+    const result = await validateActionCodesMemoTransaction(tx);
+    expect(result).toBe(false);
+  });
+});
